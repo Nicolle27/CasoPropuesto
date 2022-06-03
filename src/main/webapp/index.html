@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    </head>
+    <body>
+
+
+
+        <div class="row">
+            <div class="col-3">
+                <div class="container" style="max-width: 500px; margin-left: 50px; margin-top: 80px">
+                    <h1>Alumnos UpeU</h1>
+                    <hr />
+                    <div class="form-group">
+                         <div class="D2">
+                    <label for="nomrol">Escuela :</label><br>
+                    <select name="select" class="form-control" id="e"> 
+                        <option value="0" disabled selected>Seleccionar Escuela</option>
+                        <option value="Ing. sistemas">Ingenieria de sistemas</option>
+                        <option value="Ing. Ambiental">Ingenieria ambiental</option>
+                        <option value="Ing. Alimentos">Ingenieria de industrias alimentarias</option>
+                        <option value="Ing. Civil"> Ingenieria civil</option>
+                        <option value="Arquitectura">Arquitectura</option>
+                    </select><br>
+                </div>
+                        <label for="nomrol">Nombre :</label><br>
+                        <input type="text" class="form-control" name="nomrol" id="n" placeholder="Nombre"/>
+                        <br>
+                        <label for="nomrol">Telefono :</label><br>
+                        <input type="text" class="form-control" name="nomrol" id="t" placeholder="Telefono" />
+                        <br>
+                        <label for="nomrol">Correo :</label><br>
+                        <input type="text" class="form-control" name="nomrol" id="c" placeholder="Correo" />
+                        <br>
+                        <input type="hidden" name="id" id="id" value="0"/>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" onclick="add()">Enviar</button>
+
+                    </div>
+                </div>
+                <div class="container" id="resultado" style="max-width: 500px"></div>
+            </div>
+           <div class="col-9" style="padding: 10px; margin-left: 600px; margin-top: -348px">
+                <div class="form-group">    
+                </div>
+                <div class="a" id="resultado1" style="width: 900px"></div>
+            </div>
+            <div class="container" style="margin-left: 595px; margin-top: -255px">
+            <table class="table" id="tablita">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Escuela</th>
+                        <th scope="col">Apellido y nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col" colspan="2">Operaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+            
+            
+            
+            
+        </div>
+
+
+
+        <script src="js/Jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+        <script src="js/post.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
